@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("11.jpg");
+
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<center><h1>Booking Form in MP Tourism</h1></center>
+<div class="bg-img">
+  <form action="" class="container">
+    <h2>For Booking Purposes </h2>
+
+    <label for="text"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="text" required>
+
+    <label for="Email"><b>Email:</b></label>
+    <input type="email" placeholder="e.g) daves@gmail.com" name="text" required><br><br>
+
+    <label for="input"><b>Aadhar No: </b></label>
+    <input type="number" placeholder="7869-9804-7654">
+
+    <br><br><b>Phone :</b>  
+    </label>  
+    <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+    <b>Alternate Phone no :</b>
+    <input type="text" name="phone" placeholder="phone no." size="10"/ required>
+
+    <br><br><b>Number of Members :-  </b> 
+    <select name="Places" ><option>
+    <option value=1 selected = "true">1
+    <option value=2 >2
+    <option value=3 >3
+    <option value=4 >4
+    <option value=5 >5
+    <option value=5 >more than 5
+    </select>
+
+    <br><br><b>Place of Destination:-  </b> 
+    <select name="Places" ><option>
+    <option value=1 selected = "true">Kanha Safari
+    <option value=2 >Ujjain
+    <option value=3 >Pachmarhi
+    <option value=4 >Indore
+    <option value=5 >Pench Nat. Park
+    </select>
+
+    <br><br>
+    <b>Are you travelling with senior citizen or 5 year old child ?</b><br>
+    <input type="radio" id="YES" name="fav_language" value="YES">
+    <label for="YES">YES</label>
+    <input type="radio" id="NO" name="fav_language" value="NO">
+    <label for="NO">NO</label><br><br>
+
+    <label for="text"><b>Date of Arrival: </b></label>
+    <input type="date" name="date" required>
+
+    <br><br>
+    <label for="text"><b>Date of Departure: </b></label>
+    <input type="date" name="date" required>
+
+    <br><br><b>Payment Method:-  </b> 
+    <select name="Payment" ><option>
+    <option value=1 selected = "true">Cash
+    <option value=2 >Debit Card
+    <option value=3 >Credit Card
+    <option value=4 >Online(PayTm,Google Pay, PhonePe)
+    </select>
+    <br><br>
+    <button type="submit" class="btn">Continue (To Book) </button>
+  </form>
+</div>
+
+</body>
+</html>
